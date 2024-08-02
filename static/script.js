@@ -15,14 +15,14 @@ function click() {
     let newEnergy = Number(energy) - 1;
     let balance = document.getElementById('balance').innerHTML;
     let htmlBalance = document.getElementById('balance')
-    let newBalance = parseFloat(balance) + 0.000001;
+    let newBalance = parseFloat(balance) + 0.00001;
     
-    window.localStorage.setItem('balance', newBalance.toFixed(6));
+    window.localStorage.setItem('balance', newBalance.toFixed(5));
     console.log('balance new is ', window.localStorage.getItem('balance'));
 
     if (Number(energy) != 0) {
         htmlEnergy.innerHTML = newEnergy;
-        htmlBalance.innerHTML = newBalance.toFixed(6);
+        htmlBalance.innerHTML = newBalance.toFixed(5);
         
     }
     else {
@@ -34,7 +34,7 @@ function click() {
 
 function energy_limit() {
     let energy = document.getElementById('myenergy').innerHTML;
-    if (Number(energy) < 100) {
+    if (Number(energy) < 1000) {
         var new_energy = Number(energy) + 1;
         var r = document.getElementById('myenergy').innerHTML = new_energy;
         
