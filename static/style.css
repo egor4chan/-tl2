@@ -203,7 +203,7 @@ div#items > div {
     color: black; /* rgb(52, 166, 241); */
     height: 90px;
     width: 77%;
-    border-radius: 5px;
+    border-radius: 8px 8px 0px 0px ;
     margin-top: 5px;
 
     text-align: left;
@@ -216,16 +216,31 @@ div#items > div > h5 {
     color:  rgb(52, 166, 241); 
 }
 
+button.shopbtn {
+    position: relative;
+    top: 165px;
+    border: 1px solid rgb(25, 132, 219);
+    border-radius: 0px 0px 8px 8px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    width: 87%;
+
+    color: white;
+    background-color: rgb(52, 166, 241);
+}
+
 div#items > div > button {
     position: relative;
     top: 10px;
     border: 1px solid rgb(25, 132, 219);
-    border-radius: 5px;
+    border-radius: 0px 0px 8px 8px;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 14px;
     padding: 10px;
-    width: 45%;
+    width: 100%;
 
     color: white;
     background-color: rgb(52, 166, 241);
@@ -348,4 +363,33 @@ div#items > div >img {
         scale: 2.6;
         
     }
+}
+
+div#pos-cloud {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 80px);
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 30px white;
+
+    padding: 20px 40px;
+}
+
+button#pos-btn {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    border: none;
+    padding: 10px 10px;
+    background-color:#379eec;
+    color: white;
+    font-size: large;
+    font-family: 'Inter';
+    font-weight: 700;
 }
