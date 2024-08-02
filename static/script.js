@@ -17,6 +17,7 @@ function click() {
     let htmlBalance = document.getElementById('balance')
     let newBalance = parseFloat(balance) + 0.00001;
     
+    window.localStorage.setItem('energy', newEnergy)
     window.localStorage.setItem('balance', newBalance.toFixed(5));
     console.log('balance new is ', window.localStorage.getItem('balance'));
 
@@ -33,9 +34,12 @@ function click() {
 }
 
 function energy_limit() {
-    let energy = document.getElementById('myenergy').innerHTML;
+    //let energy = document.getElementById('myenergy').innerHTML;
+    let energy = window.localStorage.getItem('energy');
+    console.log('storgae', energy)
     if (Number(energy) < 1000) {
         var new_energy = Number(energy) + 1;
+        window.localStorage.setItem('energy', new_energy);
         var r = document.getElementById('myenergy').innerHTML = new_energy;
         
     }

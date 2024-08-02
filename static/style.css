@@ -14,10 +14,9 @@ div#shadow {
     height: 210px;
     width: 200px;
 
-    position: absolute;
+    
 
-    left: 24%;
-    right: 11%;
+    
     top: 40%;
     user-select: none;
     box-shadow: 0px 0px 140px rgb(255, 255, 255);
@@ -49,15 +48,20 @@ div.manager {
     position: fixed;
 }
 
+div.ton {
+    align-items: center;
+    text-align: center;
+}
+
 div.ton > img {
+
     height: 240px;
     width: 240px;
 
-    position: absolute;
+    position: relative;
 
-    left: 19.2%;
-    right: 19%;
-    top: 38%;
+    
+    top: 100px;
     user-select: none;
     touch-action: manipulation;
 }
@@ -292,16 +296,18 @@ div#items > div >img {
 }
 
 #indo {
-    display: flex;
-    flex-wrap: wrap;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
-#indo > div {
+#indo > center > div {
     height: 60px;
-    width: 34%;
-    left: 4%;
-    margin-left: 1%;
+    width: calc(90% - 40px);
+    
+    
     background-color:#1e81cc;
     border-radius: 8px;
     border: 1px solid #7fc1f3;
@@ -373,7 +379,7 @@ div#pos-cloud {
     height: 60%;
     background-color: #ffffff;
     border-radius: 8px 8px 0px 0px;
-    box-shadow: 0px 0px 30px white;
+   
 
     padding: 20px 40px;
 }
