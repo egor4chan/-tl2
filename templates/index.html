@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="static/tg2.js"></script>
+    <script src="static/aj.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>TON LEAGUE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <h3 id="nick">ID {{ user_id }}</h3>
+    <center>
+    <div id="indo">
+        <div>PPC
+            <p>.000001</p>
+        </div>
+        <div>PPH
+            <p>0</p>
+        </div>
+    </div>
+    </center>
+    <center>
+        <h4>TON</h4>
+    <p id="balance">0.000000</p>
+    </center>
+    <div class="ton" id="ton">
+        <center>
+        <div id="shadow"></div>
+    </center>
+        <img id='clicker' src="static/logo2d.PNG" alt="">
+    </div>
+
+    <div id="energy">
+        <a id="myenergy">100</a> / 100
+    </div>
+
+    <div class="manager">
+        <div id="team" onclick="location.href='/home{{ user_id }}'">HOME</div>
+        <div id="shop" onclick="location.href='/mine{{ user_id }}'">MINE</div>
+        <div id="profile" onclick="location.href='/team{{ user_id }}'">TEAM</div>
+    </div>
+    
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/script.js"></script>
+    <script src="static/index.js"></script>
+    <script src="static/th.js"></script>
+    <script src="static/new.js"></script>
+</body>
+</html>

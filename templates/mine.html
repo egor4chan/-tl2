@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>TON LEAGUE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <h4>TON</h4>
+    <p id="balance">0.000000</p>
+    </center>
+    
+
+    <div class="profits">
+        <div>Profit per click<h3>+0.000001</h3></div>
+        <div>Profit per hour<h3>+0</h3></div>
+    </div>
+    <center>
+    <div class="alert">
+        These plans allow you to earn hourly profits in TON: you will receive a 78% return and your deposit back after 15 days.
+    </div>
+    </center>
+
+    <h3 id="li">Upgrade profit</h3>
+
+    <center>
+    <div id='items'>
+        <div>
+            <h3>Gas Fee Master</h3>
+            <h5>Profit 2.3 TON</h5>
+            <button>Buy - 1 TON</button>
+            <img src="static/gas.PNG">
+        </div>
+        <div>
+            <h3>Smart Contract Auditor</h3>
+            <h5>Profit 6.7 TON</h5>
+            <button>Buy - 3 TON</button>
+            <img src="static/coder.PNG">
+        </div>
+        <div>
+            <h3>Liquidity Hunter</h3>
+            <h5>Profit 22.5 TON</h5>
+            <button>Buy - 10 TON</button>
+            <img src="static/solider.PNG">
+        </div>
+        <div>
+            <h3>Yield Farmer</h3>
+            <h5>Profit 45 TON</h5>
+            <button>Buy - 20 TON</button>
+            <img src="static/farmer.PNG">
+        </div>
+        <div>
+            <h3>Hashrate Hero</h3>
+            <h5>Profit 111 TON</h5>
+            <button>Buy - 50 TON</button>
+            <img src="static/hero.PNG">
+        </div>
+        <div>
+            <h3>Tokenomics Analyst</h3>
+            <h5>Profit 225 TON</h5>
+            <button>Buy - 100 TON</button>
+            <img src="static/analytics.PNG">
+        </div>
+        <div>
+            <h3>Market Battler</h3>
+            <h5>Profit 555 TON</h5>
+            <button>Buy - 250 TON</button>
+            <img src="static/box.PNG">
+        </div>
+        <div>
+            <h3>Crypto News</h3>
+            <h5>Profit 1111 TON</h5>
+            <button>Buy - 500 TON</button>
+            <img src="static/news.PNG">
+        </div>
+        <div>
+            <h3>Anti FOMO System</h3>
+            <h5>Profit 2250 TON</h5>
+            <button>Buy - 1000 TON</button>
+            <img src="static/fomo.PNG">
+        </div>
+    </div>
+        </center>
+
+
+        <div class="manager">
+            <div id="team" onclick="location.href='/home{{ user_id }}'">HOME</div>
+            <div id="shop" onclick="location.href='/mine{{ user_id }}'">MINE</div>
+            <div id="profile" onclick="location.href='/team{{ user_id }}'">TEAM</div>
+        </div>
+    
+    <footer>
+
+    </footer>
+
+    <script src="static/mine_balance.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/script.js"></script>
+    <script src="static/mine.js"></script>
+    
+</body>
+</html>

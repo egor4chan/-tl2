@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e81cc; /*#30a7ff*/
+    font-family: 'Inter';
+    touch-action: manipulation;
+    overflow-x: hidden;
+}
+
+div#shadow {
+    height: 210px;
+    width: 200px;
+
+    position: absolute;
+
+    left: 24%;
+    right: 11%;
+    top: 40%;
+    user-select: none;
+    box-shadow: 0px 0px 140px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+h4 {
+    top: 70px;
+    position: relative;
+    color: aliceblue;
+}
+p {
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+}
+
+div.manager {
+    background-color: #74b6e6; /*#8ccefe;*/
+    width: 90%;
+    height: 6%;
+    position: absolute;
+    bottom: 40px;
+    border-radius: 8px;
+    left: 5%;
+    display: flex;
+    position: fixed;
+}
+
+div.ton > img {
+    height: 240px;
+    width: 240px;
+
+    position: absolute;
+
+    left: 19.2%;
+    right: 19%;
+    top: 38%;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+div.manager > div {
+    flex-wrap: wrap;
+    background-color: #74b6e6;
+    width: 33.39%;
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.2s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+div.manager > div:hover {
+    background-color: #97c8f0;;
+}
+
+
+div.manager > div#team {
+    border-radius: 15px 0px 0px 15px;
+}
+div.manager > div#shop {
+    border-radius: 0px 0px 0px 0px;
+}
+div.manager > div#profile {
+    border-radius: 0px 15px 15px 0px;
+}
+
+div#market-window {
+    width: 100%;
+    background-color: white;
+    opacity: 0.99;
+    height: 70%;
+
+    position: absolute;
+    bottom: -500px; /*0px*/
+    border-radius: 8px 8px 0px 0px ;
+
+    font-weight: 700;
+    box-shadow: 0px 0px 100px white;
+    transition: 0.3s;
+}
+
+div#market-window > center > a {
+    position: relative;
+    color: rgb(192, 190, 190);
+    top: 10px;
+}
+
+div#market-window > center > div {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    height: 90px;
+    margin-top: 5px;
+    border: solid 1px #65b5ff;
+    text-align: left;
+}
+
+div#market-window > center#pos {
+    position: relative;
+    top: 30px
+}
+
+div#market-window > center > div > button {
+    position: absolute;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: #ddf2ff;
+    border-radius: 0px 8px 8px 0px;
+    font-weight: 800;
+    color: rgb(52, 166, 241);
+}
+
+a.icon {
+    position: relative;
+    left: 7px;
+    top: 5px;
+    font-size: 55px;
+}
+
+div#energy {
+    color: white;
+    position: absolute;
+    left: 30px;
+    bottom: 100px;
+    
+}
+
+div.profits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.profits > div {
+    align-items: center;
+    position: relative;
+    background-color: #5aa7f0;
+    height: 48px;
+    width: 30%;
+    margin-left: 6.4%;
+    border-radius: 5px;
+    top: 140px;
+    padding: 10px 20px;
+    color: white;
+}
+
+div.alert {
+    position: relative;
+    background-color: #5aa7f0;
+    height: 50px;
+    width: 76%;
+    
+    border-radius: 5px;
+    top: 150px;
+    padding: 10px 20px;
+    color: white;
+
+    font-size: 13px;
+}
+
+h3#li {
+    position: relative;
+    color: white;
+    left: 26px;
+    top: 160px;
+}
+
+div#items > div {
+    position: relative;
+    top: 170px;
+    background-color: white;
+    color: black; /* rgb(52, 166, 241); */
+    height: 90px;
+    width: 77%;
+    border-radius: 5px;
+    margin-top: 5px;
+
+    text-align: left;
+    padding: 10px 20px;
+}
+
+div#items > div > h5 {
+    position: relative;
+    top: 5px;
+    color:  rgb(52, 166, 241); 
+}
+
+div#items > div > button {
+    position: relative;
+    top: 10px;
+    border: 1px solid rgb(25, 132, 219);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+    width: 45%;
+
+    color: white;
+    background-color: rgb(52, 166, 241);
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+}
+
+#l {
+    color: white;
+    position: relative;
+    top: 150px;
+}
+
+#r {
+    color: rgb(224, 224, 224);
+    position: relative;
+    top: 150px;
+    font-weight: 400;
+}
+
+#d {
+    top: 260px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color:rgb(25, 132, 219);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+img#shake {
+    position: relative;
+    top: 140px;
+    width: 50%;
+}
+
+div#items > div >img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 80%;
+}
+
+#indo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#indo > div {
+    height: 60px;
+    width: 34%;
+    left: 4%;
+    margin-left: 1%;
+    background-color:#1e81cc;
+    border-radius: 8px;
+    border: 1px solid #7fc1f3;
+    color: rgb(193, 230, 255);
+    text-align: left;
+
+    position: relative;
+    top: 50px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#indo > div > p {
+    position: absolute;
+    top: 34px;
+    left: 20px;
+    font-size: 30px;
+    color: rgb(193, 230, 255);
+}
+
+#nick {
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#counter {
+    font-size: 32px;
+    color: white;
+    animation: countup forwards 3.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@keyframes countup {
+    from {
+        opacity: 1;
+    }
+    10% {
+        scale: 1.5;
+    }
+    30% {
+        opacity: 0.9;
+    }
+    50% {
+        top: -400px;
+    }
+    80% {
+        opacity: 0.7;
+        scale: 1.5;
+        
+    }
+    to {
+        opacity: 0;
+        scale: 2.6;
+        
+    }
+}
