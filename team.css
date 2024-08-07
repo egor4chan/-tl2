@@ -1,0 +1,18 @@
+h5 {
+    width: 80%;
+    margin-top: -40px;
+    color: rgb(49, 49, 49);
+}
+
+#blue {
+    color: rgb(31, 147, 255);
+}
+
+button {
+    position: fixed;
+    top: 80%;
+    right: 10%;
+    left: 10%;
+    width: 80%;
+    opacity: 0.9;
+}

@@ -1,77 +1,39 @@
+var health = 10;
+var shop_btn = document.getElementById('shopbtn');
 
-function shake() {
-    let ton = document.getElementById('clicker');
-    ton.style.scale = '1.02';
-    setTimeout(function() {
-        ton.style.scale = '1';
-    }, 100)
+let tg = window.Telegram.WebApp
+
+function randint(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand)
 }
 
-function click() {
-    
-    shake();
-    let energy = document.getElementById('myenergy').innerHTML; // $('#myenergy').html();
-    let htmlEnergy= document.getElementById('myenergy')
-    let newEnergy = Number(energy) - 1;
-    let balance = document.getElementById('balance').innerHTML;
-    let htmlBalance = document.getElementById('balance')
-    let newBalance = parseFloat(balance) + 0.00001;
-    
-    window.localStorage.setItem('balance', newBalance.toFixed(5));
-    console.log('balance new is ', window.localStorage.getItem('balance'));
-
-    if (Number(energy) != 0) {
-        htmlEnergy.innerHTML = newEnergy;
-        htmlBalance.innerHTML = newBalance.toFixed(5);
-        
-    }
-    else {
-        console.log('Energy limit!')
-    }
-
-    
-}
-
-function energy_limit() {
-    let energy = document.getElementById('myenergy').innerHTML;
-    if (Number(energy) < 1000) {
-        var new_energy = Number(energy) + 1;
-        var r = document.getElementById('myenergy').innerHTML = new_energy;
-        
-    }
-    else {
-        console.log('energy is full');
-    }
-}
-
-setInterval(energy_limit, 2000)
-
-var clicker = document.getElementById('clicker');
-clicker.onclick = click;
-var nick = document.getElementById('nick');
-
-
-function add_clicker_effect(x, y) {
-    let el = document.createElement("h6");
-    el.setAttribute('id', 'counter')
-    el.innerHTML = '+1';
-    el.style.position = 'absolute';
-    el.style.top = `${y}px`
-    el.style.left = `${x}px`
-    document.body.appendChild(el)
-    el.onclick = click;
-    setTimeout(function() {
-        el.remove();
-    }, 200)
-}
-
-clicker.addEventListener('click', function (event) {
-    // добавляем обработчик события "mousemove"
-    const x = event.clientX; // получаем координату X мыши
-    const y = event.clientY; // получаем координату Y мыши
+function win() {
+    health -= 1
+    if (health == 0) {
+    var shop_btn = document.getElementById('shopbtn');
+    var egg = document.getElementById('clicker');
+    let label = document.getElementById('label');
+    let prelabel = document.getElementById('prelabel');
+    egg.onclick = 'cont()';
   
-    
-    add_clicker_effect(x, y)
-    
-    console.log(`Координаты мыши: x=${x}, y=${y}`); // выводим координаты мыши в консоль
-})
+    shop_btn.style = 'opacity: 1;';
+    egg.src = 'static/success.PNG';
+    label.innerHTML = String(randint(5, 50) / 100) + ' TON'
+    prelabel.innerHTML = 'О да, в яйке оказалась бабло! Получяй бесплатные яйки за приглашения.';
+    }
+}
+
+function cont() {
+    let egg = document.getElementById('clicker');
+    let label = document.getElementById('label');
+    let prelabel = document.getElementById('prelabel');
+
+    egg.className == 'success'
+    egg.src = 'static/egg.PNG';
+    label.innerHTML = 'Яйко нищеты'
+    prelabel.innerHTML = 'Тибе врятли чота выпадет с бесплатного яйка такчто купи богатае не позорся.'
+
+
+}
+
