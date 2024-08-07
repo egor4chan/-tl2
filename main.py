@@ -4,10 +4,6 @@ from server import Data
 app = Flask(__name__)
 data = Data()
 
-@app.route('/')
-def page():
-    return 'Hello'
-
 @app.route('/<user_id>_<refer_id>')
 def hello_page(user_id, refer_id):
     data.registration(user_id, refer_id)
@@ -22,6 +18,11 @@ def index_page(user_id=0):
 @app.route('/mine<user_id>')
 def mine_page(user_id=0):
     return render_template('mine.html', user_id=user_id)
+
+@app.route('/shop<user_id>')
+def shop_page(user_id=0):
+    return render_template('shop.html', user_id=user_id)
+
 
 @app.route('/team<user_id>')
 def team_page(user_id=0):
@@ -41,5 +42,5 @@ def b():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
