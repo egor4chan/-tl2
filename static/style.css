@@ -24,7 +24,7 @@ div#shadow {
 }
 
 h4 {
-    top: 70px;
+    top: 130px;
     position: relative;
     color: aliceblue;
 }
@@ -33,7 +33,7 @@ p {
     color: white;
     font-size: 50px;
     position: relative;
-    top: 70px;
+    top: 130px;
 }
 
 div.manager {
@@ -61,7 +61,7 @@ div.ton > img {
     position: relative;
 
     
-    top: 100px;
+    top: 160px;
     user-select: none;
     touch-action: manipulation;
 }
@@ -181,7 +181,7 @@ div.profits > div {
 
 div.alert {
     position: relative;
-    background-color: #5aa7f0;
+    
     height: 50px;
     width: 76%;
     
@@ -205,10 +205,10 @@ div#items > div {
     top: 170px;
     background-color: white;
     color: black; /* rgb(52, 166, 241); */
-    height: 90px;
+    height: 130px;
     width: 77%;
-    border-radius: 8px 8px 0px 0px ;
-    margin-top: 5px;
+    border-radius: 8px;
+    margin-top: 0px;
 
     text-align: left;
     padding: 10px 20px;
@@ -216,20 +216,23 @@ div#items > div {
 
 div#items > div > h5 {
     position: relative;
-    top: 5px;
-    color:  rgb(52, 166, 241); 
+    top: 15px;
+    font-weight: 400;
+    /**color:  rgb(52, 166, 241); */
 }
+
 
 button.shopbtn {
     position: relative;
-    top: 165px;
+    top: 105px;
+    left: -76px;
     border: 1px solid rgb(25, 132, 219);
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
-    padding: 15px;
-    width: 87%;
+    padding: 10px 20px;
+    width: 40%;
 
     color: white;
     background-color: rgb(52, 166, 241);
@@ -268,19 +271,7 @@ footer {
     font-weight: 400;
 }
 
-#d {
-    top: 260px;
-    position: relative;
-    width: 90%;
-    height: 50px;
-    padding: 0px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    color:rgb(25, 132, 219);
-    font-weight: 700;
-    font-size: 18px;
-}
+
 
 img#shake {
     position: relative;
@@ -372,9 +363,10 @@ div#items > div >img {
 }
 
 div#pos-cloud {
+    transition: 0.5s;
     position: fixed;
     left: 0px;
-    bottom: 0px;
+    bottom: -60%;
     width: calc(100% - 80px);
     height: 60%;
     background-color: #ffffff;
@@ -385,12 +377,14 @@ div#pos-cloud {
 }
 
 button#pos-btn {
+    transition: 0.5s;
     position: fixed;
-    bottom: 0px;
+    bottom: 20px;
     left: 0px;
     text-align: center;
     height: 70px;
-    width: 100%;
+    width: 90%;
+    left: 5%;
     border: none;
     padding: 10px 10px;
     background-color:#379eec;
@@ -398,4 +392,101 @@ button#pos-btn {
     font-size: large;
     font-family: 'Inter';
     font-weight: 700;
+    border-radius: 8px;
+}
+
+div#reflist {
+    position: relative;
+    top: 200px;
+}
+
+div#reflist > div {
+    width: 80%;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+#d {
+    
+    position:fixed;
+    width: 85%;
+    left: 7.5%;
+    right: 7.5%;
+    background-color: white;
+    bottom: 100px;
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(25, 132, 219);;
+    background-color: white;
+    color:rgb(25, 132, 219);
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 0.9;
+    
+}
+
+#shoper {
+    flex-wrap: wrap;
+    display: flex;
+
+    text-align: center;
+
+    position: relative;
+    top: 190px;
+}
+
+#shoper > div {
+    position: relative;
+    left: calc(5% - 10px);
+    margin: 5px;
+    width: 45%;
+    height: 240px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#shoper > div > button {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+    right: 5%;
+    bottom: 10px;
+
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter';
+    color: white;
+    background-color:#379eec
+}
+
+#shoper > div > h3 {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+#shoper > div > h6 {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+b {
+    color: rgb(3, 184, 3);
+}
+
+#shoper > div > img {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 70px;
+    max-width: 130px;
 }

@@ -36,7 +36,7 @@ function click() {
 function energy_limit() {
     //let energy = document.getElementById('myenergy').innerHTML;
     let energy = window.localStorage.getItem('energy');
-    console.log('storgae', energy)
+    
     if (Number(energy) < 1000) {
         var new_energy = Number(energy) + 1;
         window.localStorage.setItem('energy', new_energy);
@@ -77,5 +77,5 @@ clicker.addEventListener('click', function (event) {
     
     add_clicker_effect(x, y)
     
-    console.log(`Координаты мыши: x=${x}, y=${y}`); // выводим координаты мыши в консоль
+    
 })

@@ -3,7 +3,10 @@ function buy1() {
     var newH1 = document.createElement("h1");
     var newBTN = document.createElement("button");
 
-    
+    setTimeout(() => {
+        newDiv.style.bottom = '0px'
+    }, 10);
+
     newDiv.setAttribute('id', 'pos-cloud');
     newBTN.setAttribute('id', 'pos-btn');
     newBTN.onclick = removeit

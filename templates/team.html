@@ -16,14 +16,25 @@
     <h1 id='l'>You have {{ refs }} refferals!</h1>
     <h5 id="r">Invite more friends for updating your balance!</h5>
 
-    <img id='shake' src="static/img.PNG">
+    <div id="reflist">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <button id="d">Claim rewards (0)</button>
     </center>
 
+    <footer></footer>
     <div class="manager">
         <div id="team" onclick="location.href='/home{{ user_id }}'">HOME</div>
-        <div id="shop" onclick="location.href='/mine{{ user_id }}'">MINE</div>
+        <div id="shop" onclick="location.href='/shop{{ user_id }}'">MINE</div>
         <div id="profile" onclick="location.href='/team{{ user_id }}'">TEAM</div>
     </div>
 
